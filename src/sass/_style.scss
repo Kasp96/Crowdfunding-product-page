@@ -2,3 +2,27 @@ body {
 	background-color: #777;
 	font-family: var(--ff-primary);
 }
+.hero-img {
+	background-image: url('../images/image-hero-mobile.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 35vh;
+	width: 100%;
+}
+.hero-shadow {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+.nav-menu {
+	gap: 2rem;
+
+	a {
+		font-size: 0.8rem;
+		font-size: clamp(0.8rem, 1.5vw, 1rem);
+		color: var(--clr-white);
+	}
+}
