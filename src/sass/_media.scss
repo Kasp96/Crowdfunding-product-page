@@ -1,6 +1,27 @@
 @media (min-width: 768px) {
 	.hero-img {
 		background-image: url('../images/image-hero-desktop.jpg');
-        min-height: 51vh;
+		min-height: 51vh;
+	}
+	.nav {
+		.nav-menu {
+			position: static;
+			flex-direction: row;
+			width: auto;
+			background-color: transparent;
+			gap: 2rem;
+			margin: 0;
+			transform: translateX(0);
+
+			a {
+				padding: 0;
+				font-size: clamp(0.8rem, 1.5vw, 1rem);
+				color: var(--clr-white);
+				font-weight: 400;
+			}
+			.line {
+				display: none;
+			}
+		}
 	}
 }

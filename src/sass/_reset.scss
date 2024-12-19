@@ -32,9 +32,12 @@ select {
 	font-family: inherit;
 }
 
-button {
+button,
+.burger-btn,
+.burger-close {
 	cursor: pointer;
 }
-ul, li {
+ul,
+li {
 	list-style: none;
 }
