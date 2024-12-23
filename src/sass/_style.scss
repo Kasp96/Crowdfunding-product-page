@@ -7,14 +7,14 @@ body {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	min-height: 35vh;
+	min-height: 38vh;
 	width: 100%;
 }
 .hero-shadow {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.1);
 }
 .nav-shade {
@@ -80,7 +80,7 @@ body {
 }
 
 .second-container {
-	top: 9rem;
+	top: 30vh;
 	left: 50%;
 	transform: translateX(-50%);
 	gap: 1.5rem;
@@ -138,8 +138,57 @@ body {
 			color: var(--clr-black);
 		}
 		.stats-description {
+			position: relative;
 			font-size: 0.85rem;
+			font-weight: 500;
 			color: var(--clr-gray);
+		}
+		.first-gap::after,
+		.second-gap::after {
+			position: absolute;
+			content: '';
+			bottom: -1.5rem;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 90px;
+			height: 1px;
+			background-color: var(--clr-gray-200);
+		}
+		.progress-bar,
+		.progress-bar::after {
+			height: 12px;
+			border-radius: 8px;
+		}
+
+		.progress-bar {
+			position: relative;
+			width: 90%;
+			background-color: var(--clr-gray-100);
+		}
+		.progress-bar::after {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			width: 80%;
+			background-color: var(--clr-cyan-400);
+		}
+	}
+	.project-info {
+		padding: 2.25rem 1.35rem;
+		margin: 0 1.85rem;
+		
+		.project-info-heading {
+			margin-bottom: 1.5rem;
+			font-size: 1.15rem;
+			font-weight: 700;
+			color: var(--clr-black);
+		}
+		.project-info-description {
+			font-size: 0.85rem;
+			font-weight: 500;
+			line-height: 23px;
+			color: var(--clr-gray-700);
 		}
 	}
 }
