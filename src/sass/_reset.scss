@@ -32,6 +32,14 @@ select {
 	font-family: inherit;
 }
 
+button {
+	display: block;
+	border: none;
+	border-radius: 30px;
+	background-color: var(--clr-cyan-400);
+	color: var(--clr-white);
+}
+
 button,
 .burger-btn,
 .burger-close,
