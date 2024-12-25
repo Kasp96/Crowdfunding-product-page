@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <div class="container-l p-0 m-0">
+    <div class="container-l p-0 m-0 z-1">
         <div class="hero-img position-absolute"></div>
-        <div class="hero-shadow position-absolute"></div>
+        <div class="hero-shadow"></div>
         <div class="nav-shade z-1"></div>
         <header class="header position-relative mt-0 pt-4 px-4">
             <nav class="nav d-flex  justify-content-between align-items-center align-items-md-start mt-1">
                 <img class="nav-logo z-1" src="../dist/images/logo.svg" alt="crowdfunding logo">
 
-                <ul class="nav-menu d-md-flex ps-0 p-md-0">
+                <ul class="nav-menu d-md-flex ps-0 p-md-0 z-2">
                     <li><a href="#">About</a></li>
                     <div class="line"></div>
                     <li><a href="#">Discover</a></li>
@@ -35,35 +35,42 @@
         </header>
     </div>
     <main>
-        <div class="container-l second-container position-absolute d-flex flex-column align-items-center">
+        <div class="container-l second-container position-absolute d-flex flex-column align-items-center z-0">
 
             <div class="project-card d-flex flex-column align-items-center">
                 <img class="project-card-logo position-absolute" src="../dist/images/logo-mastercraft.svg" alt="">
                 <h1 class="project-card-heading mb-3 text-center">Mastercraft Bamboo Monitor Riser
                 </h1>
-                <p class="project-card-description text-center">A beautifully handcrafted monitor stand to reduce neck
+                <p class="project-card-description text-center">A beautifully & handcrafted monitor stand to reduce neck
                     and
                     eye
                     strain.
                 </p>
-                <div class="buttons d-flex gap-2">
+                <div class="buttons d-flex gap-2 justify-content-md-between mt-md-3">
                     <button class="back-btn">Back this project
                     </button>
-                    <img class="bookmark-img" src="../dist/images/icon-bookmark.svg" alt="">
+                    <div class="bookmark-btn position-relative d-flex align-items-center gap-3">
+                        <img class="bookmark-img" src="../dist/images/icon-bookmark.svg" alt="bookmark icon">
+                        <div class="bookmark-extended d-none d-md-flex align-items-center"> Bookmark
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="stats-card d-flex flex-column align-items-center">
-                <div class="stats-box">
-                    <h2 class="stats-amount text-center">$89,914</h2>
-                    <p class="stats-description first-gap">of $100,000 backed</p>
-                </div>
-                <div class="stats-box">
-                    <h2 class="stats-amount text-center">5,007</h2>
-                    <p class="stats-description second-gap">total backers</p>
-                </div>
-                <div class="stats-box">
-                    <h2 class="stats-amount text-center">56</h2>
-                    <p class="stats-description">days left</p>
+            <div class="stats-card d-flex flex-column align-items-center py-md-5">
+                <div class="stats-container d-flex flex-column flex-md-row align-items-center justify-content-md-start">
+                    <div class="stats-box">
+                        <h2 class="stats-amount text-center">$89,914</h2>
+                        <p class="stats-description first-gap">of $100,000 backed</p>
+                    </div>
+                    <div class="stats-box">
+                        <h2 class="stats-amount text-center">5,007</h2>
+                        <p class="stats-description second-gap">total backers</p>
+                    </div>
+                    <div class="stats-box">
+                        <h2 class="stats-amount text-center">56</h2>
+                        <p class="stats-description">days left</p>
+                    </div>
                 </div>
                 <div class="progress-bar"></div>
             </div>
@@ -96,7 +103,8 @@
                     <div class="reward-card p-4">
                         <h3 class="reward-heading">Black Edition Stand</h3>
                         <p class="pledge">Pledge $75 or more</p>
-                        <p class="reward-description">You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer 
+                        <p class="reward-description">You get a Black Special Edition computer stand and a personal
+                            thank you. You’ll be added to our Backer
                             member list. Shipping is included.</p>
                         <p class="availability"><span class="bold me-2">64</span>left</p>
                         <button class="reward-button">Select Reward
@@ -105,7 +113,8 @@
                     <div class="reward-card p-4 expired">
                         <h3 class="reward-heading">Mahogany Special Edition</h3>
                         <p class="pledge">Pledge $200 or more</p>
-                        <p class="reward-description">You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You'll be added to our Backer member list. Shipping is included.</p>
+                        <p class="reward-description">You get two Special Edition Mahogany stands, a Backer T-Shirt, and
+                            a personal thank you. You'll be added to our Backer member list. Shipping is included.</p>
                         <p class="availability d-flex align-items-center"><span class="bold me-2">0</span>left
                         </p>
                         <button class="reward-button out-stock">Out of Stock

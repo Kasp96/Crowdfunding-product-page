@@ -1,7 +1,7 @@
 @media (min-width: 768px) {
 	.hero-img {
 		background-image: url('../images/image-hero-desktop.jpg');
-		min-height: 51vh;
+		min-height: 42vh;
 	}
 	.nav {
 		.nav-menu {
@@ -21,6 +21,74 @@
 			}
 			.line {
 				display: none;
+			}
+		}
+	}
+	.second-container {
+		.project-card,
+		.stats-card,
+		.project-info {
+			max-width: 730px;
+
+			.project-card-heading {
+				padding-top: 3.5rem;
+				font-size: clamp(1.2rem, 2.25vw, 1.75rem);
+			}
+			.project-card-description {
+				font-size: clamp(0.85rem, 2.25vw, 0.95rem);
+			}
+			.buttons {
+				width: 87%;
+
+				.back-btn {
+					padding: 10px 43px;
+				}
+
+				.bookmark-btn {
+					background-color: var(--clr-gray-100);
+					border-radius: 30px;
+
+					.bookmark-extended {
+						width: 100px;
+						height: 100%;
+						font-weight: 700;
+						color: var(--clr-gray);
+					}
+				}
+			}
+		}
+		.stats-card {
+			.stats-container {
+				width: 85%;
+				gap: 6.25rem;
+
+				.stats-description {
+					font-size: clamp(0.85rem, 3vw, 0.9rem);
+				}
+				.first-gap::after,
+				.second-gap::after {
+					bottom: 1.5rem;
+					left: 140%;
+					height: 50px;
+					width: 1px;
+				}
+				.second-gap::after {
+					left: 205%;
+				}
+			}
+			.stats-box:last-of-type {
+				margin-left: 2rem;
+			}
+		}
+		.project-info {
+			padding: 3.15rem 3rem;
+
+			.project-info-heading {
+				font-size: clamp(1.15rem, 2vw, 1.25rem);
+			}
+			.project-info-description,
+			.reward-description {
+				font-size: clamp(0.88rem, 2vw, 1rem);
 			}
 		}
 	}
