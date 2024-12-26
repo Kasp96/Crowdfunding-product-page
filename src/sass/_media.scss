@@ -84,11 +84,30 @@
 			padding: 3.15rem 3rem;
 
 			.project-info-heading {
+				margin-bottom: 2.5rem;
 				font-size: clamp(1.15rem, 2vw, 1.25rem);
 			}
 			.project-info-description,
 			.reward-description {
 				font-size: clamp(0.88rem, 2vw, 1rem);
+				line-height: 30px;
+			}
+			.project-info-description:last-of-type {
+				margin-top: 2.25rem;
+			}
+
+			.available-options {
+				.reward-card {
+					padding: 2.25rem 2rem;
+
+					.reward-heading {
+						font-size: clamp(0.95rem, 2vw, 1.15rem);
+						font-weight: 700;
+					}
+					.pledge {
+						font-size: clamp(0.9rem, 2vw, 0.95rem);
+					}
+				}
 			}
 		}
 	}
