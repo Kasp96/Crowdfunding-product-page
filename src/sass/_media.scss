@@ -47,6 +47,8 @@
 				.bookmark-btn {
 					background-color: var(--clr-gray-100);
 					border-radius: 30px;
+					cursor: pointer;
+					transition: opacity 0.3s;
 
 					.bookmark-extended {
 						width: 100px;
@@ -54,6 +56,9 @@
 						font-weight: 700;
 						color: var(--clr-gray);
 					}
+				}
+				.bookmark-btn:hover {
+					opacity: 0.7;
 				}
 			}
 		}
@@ -67,9 +72,9 @@
 				}
 				.first-gap::after,
 				.second-gap::after {
-					bottom: 1.5rem;
+					bottom: 0.25rem;
 					left: 140%;
-					height: 50px;
+					height: 70px;
 					width: 1px;
 				}
 				.second-gap::after {
@@ -109,6 +114,27 @@
 					}
 				}
 			}
+		}
+	}
+	.backing-modal {
+		max-width: 732px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		background-color: var(--clr-white);
+		border-radius: 10px;
+
+		.modal-title {
+			margin-bottom: 1rem;
+			font-size: 1.5rem;
+			font-weight: 700;
+		}
+		.modal-text {
+			color: var(--clr-gray);
+		}
+		.pledge-name {
+			font-size: 1rem;
 		}
 	}
 }
