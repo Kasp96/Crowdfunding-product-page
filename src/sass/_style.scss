@@ -243,9 +243,6 @@ body {
 					}
 				}
 			}
-			.expired {
-				opacity: 0.5;
-			}
 			.out-stock {
 				filter: grayscale(1);
 			}
@@ -253,6 +250,7 @@ body {
 	}
 }
 .backing-modal {
+	
 	.close-modal-btn {
 		padding: 0.55rem;
 		top: 1.5rem;
@@ -265,17 +263,18 @@ body {
 	.pledge-list {
 		.pledge-item {
 			border: 1px solid var(--clr-gray-500);
-			border-radius: 8px;
+			border-radius: 6px;
 
 			.radio-input {
-				top: 1.25rem;
-				left: -3rem;
 				appearance: none;
 				width: 24px;
 				height: 24px;
+				top: 1.25rem;
+				left: -3rem;
 				border: 1px solid var(--clr-gray-300);
 				border-radius: 50%;
 			}
+
 			.radio-input::before {
 				display: none;
 				position: absolute;
@@ -360,6 +359,9 @@ body {
 					font-weight: 600;
 				}
 			}
+		}
+		.pledge-item:first-of-type .pledge-name {
+			margin-top: 1.2rem;
 		}
 	}
 }
