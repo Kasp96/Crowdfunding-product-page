@@ -1,0 +1,33 @@
+.modal-completed {
+	display: none;
+	padding: 3rem 3.75rem;
+	max-width: 578px;
+	width: 578px;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: var(--clr-white);
+	border-radius: 10px;
+	z-index: 5;
+
+	.modal-completed-logo {
+		width: 5.5rem;
+		margin-bottom: 2.75rem;
+	}
+
+	.modal-completed-title {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+	.modal-completed-text {
+		margin-bottom: 2rem;
+		color: var(--clr-gray);
+		line-height: 32px;
+	}
+	.got-it-btn {
+		padding: 12px;
+		width: 100px;
+		font-size: 0.85rem;
+		font-weight: 600;
+	}
+}

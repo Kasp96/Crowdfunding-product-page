@@ -1,0 +1,80 @@
+.hero-img {
+	background-image: url('/dist/images/image-hero-mobile.jpg');
+	background-size: cover;
+	background-position: center top;
+	background-repeat: no-repeat;
+	min-height: 38vh;
+	width: 100%;
+}
+.hero-shadow {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.03);
+	z-index: 0;
+	// ZMIENIC NA 0 JAK OSTYLUJE MODAL COMPLETED
+	
+}
+.nav-shade {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav {
+	.nav-menu {
+		position: fixed;
+		top: 0;
+		left: 50%;
+		flex-direction: column;
+		width: 90%;
+		max-width: 375px;
+		background-color: var(--clr-white);
+		gap: 0;
+		margin-top: 5rem;
+		border-radius: 12px;
+		transform: translate(-50%, 0) translateX(200%);
+		transition: transform 0.3s;
+
+		a {
+			display: block;
+			padding: 1.3rem 1.15rem;
+			font-size: 1.1rem;
+			font-weight: 600;
+			color: var(--clr-black);
+		}
+
+		.line {
+			width: 100%;
+			height: 1px;
+			background-color: var(--clr-gray-200);
+		}
+	}
+	.burger-box {
+		position: absolute;
+		top: 0.25rem;
+		right: 0;
+		padding: 1.75rem;
+	}
+}
+
+.burger-close {
+	display: none;
+}
+.hide {
+	display: none;
+}
+.show {
+	display: block;
+}
+.nav-menu.show-mobile-nav {
+	display: flex;
+	transform: translate(-50%, 0) translateX(0);
+	z-index: 10;
+}

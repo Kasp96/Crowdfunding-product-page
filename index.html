@@ -10,7 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<link rel="stylesheet" href="../dist/css/main-min.css">
+<link rel="stylesheet" href="../dist/css/base/styles-min.css">
 
 </head>
 
@@ -39,8 +39,9 @@
             </nav>
         </header>
     </div>
-    <div class="backing-modal position-relative z-1 p-5">
-        <img class="close-modal-btn position-absolute" src="../dist/images/icon-close-modal.svg" alt="">
+    <div class="backing-modal position-relative p-4 p-md-5">
+        <img class="close-modal-btn position-absolute" src="../dist/images/icon-close-modal.svg"
+            alt="close modal button">
         <h2 class="modal-title">Back this project
         </h2>
         <p class="modal-text">Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world?
@@ -59,7 +60,7 @@
                     signed up to receive product updates via email.
                 </p>
             </div>
-            <div class="pledge-item">
+            <div class="pledge-item" data-clicked="false">
                 <div class="pledge-header position-relative d-flex flex-column">
                     <div class="radio-input-container position-absolute">
                         <input class="radio-input position-relative" type="radio" name="pledge">
@@ -81,7 +82,7 @@
                     campaign,
                     and you'll be added to a special Backer member list.
                 </p>
-                <div class="pledge-input-group d-flex justify-content-between align-items-center d-none">
+                <div class="pledge-input-group justify-content-between align-items-center">
                     <p class="pledge-input-label m-0 p-0">Enter your pledge</p>
                     <div class="pledge-actions d-flex gap-3">
                         <div class="input-container  position-relative">
@@ -92,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pledge-item">
+            <div class="pledge-item" data-clicked="false">
                 <div class="pledge-header position-relative d-flex flex-column">
                     <div class="radio-input-container position-absolute">
                         <input class="radio-input position-relative" type="radio" name="pledge">
@@ -113,7 +114,7 @@
                     You get a Black Special Edition computer stand and a personal thank you. You'll be added to our
                     Backer member list. Shipping is included.
                 </p>
-                <div class="pledge-input-group d-flex justify-content-between align-items-center  d-none">
+                <div class="pledge-input-group justify-content-between align-items-center">
                     <p class="pledge-input-label m-0 p-0">Enter your pledge</p>
                     <div class="pledge-actions d-flex gap-3">
                         <div class="input-container  position-relative">
@@ -123,7 +124,7 @@
                     </div>
                 </div>
             </div>
-            <div class="pledge-item opacity-50">
+            <div class="pledge-item opacity-50 pe-none">
                 <div class="pledge-header position-relative d-flex flex-column">
                     <div class="radio-input-container position-absolute">
                         <input class="radio-input position-relative" type="radio" name="pledge">
@@ -147,8 +148,16 @@
             </div>
         </div>
     </div>
+    <div class="modal-completed position-absolute flex-column align-items-center">
+        <img class="modal-completed-logo" src="../dist/images/icon-check.svg" alt="">
+        <h2 class="modal-completed-title mb-3">Thanks for your support!</h2>
+        <p class="modal-completed-text text-center">Your pledge brings us one step closer to sharing Mastercraft Bamboo
+            Monitor
+            Riser worldwide. You will get an email once our campaign is completed.</p>
+        <button class="got-it-btn">Got it!</button>
+    </div>
     <main>
-        <div class="container-l second-container position-absolute d-flex flex-column align-items-center z-0">
+        <div class="container-l second-container position-absolute d-flex flex-column align-items-center">
 
             <div class="project-card d-flex flex-column align-items-center">
                 <img class="project-card-logo position-absolute" src="../dist/images/logo-mastercraft.svg" alt="">
@@ -160,7 +169,7 @@
                     strain.
                 </p>
                 <div class="buttons d-flex gap-2 justify-content-md-between mt-md-3">
-                    <button class="back-btn">Back this project
+                    <button class="back-btn open-modal-btn">Back this project
                     </button>
                     <div class="bookmark-btn position-relative d-flex align-items-center gap-3">
                         <img class="bookmark-img" src="../dist/images/icon-bookmark.svg" alt="bookmark icon">
@@ -217,7 +226,7 @@
                             <p class="availability d-flex align-items-center  p-md-0 m-md-0"><span
                                     class="bold me-2">101</span>left
                             </p>
-                            <button class="reward-button mt-md-0 ">Select Reward
+                            <button class="reward-button open-modal-btn mt-md-0 ">Select Reward
                             </button>
                         </div>
                     </div>
@@ -233,7 +242,7 @@
                             class="reward-card-bottom d-flex flex-column flex-md-row align-items-start align-items-md-center justify-content-md-between mt-md-4">
                             <p class="availability d-flex align-items-center  p-md-0 m-md-0"><span
                                     class="bold me-2">64</span>left</p>
-                            <button class="reward-button mt-md-0">Select Reward
+                            <button class="reward-button open-modal-btn mt-md-0">Select Reward
                             </button>
                         </div>
 

@@ -1,6 +1,6 @@
 @media (min-width: 768px) {
 	.hero-img {
-		background-image: url('../images/image-hero-desktop.jpg');
+		background-image: url('/dist/images/image-hero-desktop.jpg');
 		min-height: 42vh;
 	}
 	.nav {
@@ -117,13 +117,17 @@
 		}
 	}
 	.backing-modal {
-		max-width: 732px;
+		margin-top: 10rem;
+		margin-inline: 0;
+		max-width: 735px;
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-		background-color: var(--clr-white);
-		border-radius: 10px;
+
+		.close-modal-btn {
+			right: 1.5rem;
+		}
 
 		.modal-title {
 			margin-bottom: 1rem;
@@ -131,10 +135,21 @@
 			font-weight: 700;
 		}
 		.modal-text {
-			color: var(--clr-gray);
+			margin: 0 0 2rem 0;
+			line-height: 20px;
+			
 		}
-		.pledge-name {
-			font-size: 1rem;
+		.pledge-list {
+			.pledge-item {
+				.pledge-header {
+					.pledge-name {
+						font-size: 1rem;
+					}
+				}
+				.pledge-description {
+					font-size: 0.95rem;
+				}
+			}
 		}
 	}
 }
