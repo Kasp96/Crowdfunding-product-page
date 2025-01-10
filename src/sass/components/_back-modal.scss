@@ -25,7 +25,7 @@
 	.modal-text {
 		margin-top: 1.75rem;
 		margin-bottom: 1.75rem;
-		// font-size: 0.9rem;
+		font-size: 0.9rem;
 		color: var(--clr-gray);
 		line-height: 25px;
 	}
@@ -39,7 +39,7 @@
 				appearance: none;
 				width: 24px;
 				height: 24px;
-				top: 1.25rem;
+				top: 1rem;
 				left: -3rem;
 				border: 1px solid var(--clr-gray-300);
 				border-radius: 50%;
@@ -65,7 +65,7 @@
 				padding: 0.75rem 1.75rem 0rem 4.5rem;
 
 				.pledge-name {
-					font-size: 0.9rem;
+					font-size: 0.85rem;
 					font-weight: 800;
 					transition: color 0.2s;
 					cursor: pointer;
@@ -75,6 +75,7 @@
 				}
 
 				.pledge-amount-info {
+					font-size: 0.85rem;
 					font-weight: 600;
 					color: var(--clr-cyan-400);
 				}
@@ -85,14 +86,19 @@
 			.pledge-input-label {
 				color: var(--clr-gray);
 			}
+			.pledge-stock {
+				position: absolute;
+				bottom: -13rem;
+				left: 1.5rem;
+			}
 			.pledge-input-label {
 				font-size: 0.95rem;
 			}
 
 			.pledge-description {
-				padding: 0 1.5rem 0 4.5rem;
+				padding: 1.25rem 2.5rem 2.75rem 1.5rem;
 				margin-bottom: 2rem;
-				font-size: 0.95rem;
+				font-size: 0.85rem;
 				line-height: 28px;
 			}
 			.pledge-stock-bold {
@@ -107,6 +113,10 @@
 				padding: 1.5rem 1.5rem 1.25rem;
 				border-top: 1px solid var(--clr-gray-300);
 
+
+				.pledge-input-label {
+					font-size: 0.9rem;
+				}
 				.input-container {
 					.pledge-input {
 						width: 100px;
