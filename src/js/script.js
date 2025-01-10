@@ -29,6 +29,10 @@ selectedPledgeBtns.forEach((btn) => {
 			pledgeInputs.forEach((input) => {
 				input.value = '';
 			});
+			window.scrollTo({
+				top: 150,
+				behavior: 'smooth',
+			});
 		}
 	});
 });

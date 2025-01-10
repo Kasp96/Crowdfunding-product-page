@@ -1,5 +1,5 @@
 .hero-img {
-	background-image: url('/dist/images/image-hero-mobile.jpg');
+	background-image: url('../../../dist/images/image-hero-mobile.jpg');
 	background-size: cover;
 	background-position: center top;
 	background-repeat: no-repeat;
@@ -15,7 +15,6 @@
 	background-color: rgba(0, 0, 0, 0.03);
 	z-index: 0;
 	// ZMIENIC NA 0 JAK OSTYLUJE MODAL COMPLETED
-	
 }
 .nav-shade {
 	display: none;
